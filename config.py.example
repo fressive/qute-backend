@@ -1,0 +1,28 @@
+""" Server """
+
+port = 7883
+
+database_url = "mysql://username:password@127.0.0.1:3306/qute?charset=utf8"
+
+""" Image Source """
+
+allow_r18 = True
+r18_tags = ["r-18", "r18", "r-18g", "r18g"]
+
+''' Pixiv '''
+pixiv_refresh_token = ""
+pixiv_print_refresh_token = False
+
+pixiv_username = ""
+pixiv_password = ""
+
+pixiv_login_mode = 0
+
+# 0 -> refresh token
+# 1 -> username + password
+
+""" API Ratelimit (per IP) """
+
+get_page_limit = "30/minute" # images.page
+get_images_limit = "5/second" # images.get
+view_images_limit = "2000/hour" # images.view
